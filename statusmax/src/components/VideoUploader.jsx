@@ -20,24 +20,24 @@ export default function VideoUploader({ onFileSelect }) {
   }
 
   return (
-    <div className="bg-white rounded-2xl border-2 border-dashed border-gray-200 p-12 text-center hover:border-[#25D366] transition-colors cursor-pointer"
+    <div className="bg-white rounded-2xl border-2 border-dashed border-gray-200 p-6 sm:p-8 md:p-12 text-center hover:border-[#25D366] transition-colors cursor-pointer"
          onClick={() => inputRef.current?.click()} 
          onDragOver={(e) => e.preventDefault()} 
          onDrop={handleDrop}>
       
-      <div className="bg-blue-50 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-        <Upload className="text-[#25D366] w-7 h-7" />
+      <div className="bg-blue-50 rounded-full p-3 sm:p-4 w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+        <Upload className="text-[#25D366] w-5 h-5 sm:w-7 sm:h-7" />
       </div>
     
-      <h3 className="text-xl font-semibold text-gray-800 mb-2 font-display">
+      <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-1 sm:mb-2 font-display">
         Drag & Drop Video Files
       </h3>
-      <p className="text-gray-400 text-sm mb-6">
-        Supports MP4, MOV, WebM up to 2GB.<br/>
+      <p className="text-gray-400 text-xs sm:text-sm mb-5 sm:mb-6">
+        Supports MP4, MOV, WebM up to 2GB.<br className="hidden sm:block"/>
         Or click to browse your files.
       </p>
     
-      <button className="border border-gray-300 rounded-lg px-6 py-2 text-gray-700 hover:bg-gray-50 font-medium text-sm outline-none">
+      <button className="border border-gray-300 rounded-lg px-4 sm:px-6 py-2 text-gray-700 hover:bg-gray-50 font-medium text-sm outline-none transition-colors">
         Select Files
       </button>
     

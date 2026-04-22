@@ -56,14 +56,14 @@ export default function App() {
       <Navbar />
       
       {/* Page Header */}
-      <div className="text-center py-10 px-4 relative">
-        <h1 className="text-4xl font-bold text-gray-900 font-display mb-3 tracking-tight">Optimize your media.</h1>
-        <p className="text-gray-500 text-center max-w-2xl mx-auto">
+      <div className="text-center py-6 md:py-10 px-4 relative">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 font-display mb-2 md:mb-3 tracking-tight">Optimize your media.</h1>
+        <p className="text-sm md:text-base text-gray-500 text-center max-w-2xl mx-auto mb-4 md:mb-0">
           Compress and enhance video files for faster delivery across platforms.
         </p>
 
         {/* Engine Status Indicator */}
-        <div className="absolute top-4 right-4 flex items-center gap-2 bg-white border border-gray-200 px-3 py-1.5 rounded-full shadow-sm text-xs font-semibold">
+        <div className="md:absolute static mt-2 md:mt-0 flex items-center justify-center md:justify-start w-fit mx-auto md:top-4 md:right-4 gap-2 bg-white border border-gray-200 px-3 py-1.5 rounded-full shadow-sm text-xs font-semibold">
            {!loaded ? (
              <>
                <Loader2 className="w-3 h-3 text-blue-500 animate-spin" />

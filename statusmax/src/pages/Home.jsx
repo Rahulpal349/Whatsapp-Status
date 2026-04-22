@@ -8,19 +8,19 @@ export default function Home() {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="max-w-6xl mx-auto px-4 pt-20 pb-32 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 font-display tracking-tight mb-6 mt-10">
+      <div className="max-w-6xl mx-auto px-4 pt-12 md:pt-20 pb-16 md:pb-32 text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 font-display tracking-tight mb-6 mt-6 md:mt-10">
           The Ultimate Client-Side <br />
           <span className="text-[#25D366]">Video Optimizer.</span>
         </h1>
-        <p className="text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
+        <p className="text-lg sm:text-xl text-gray-500 mb-8 sm:mb-10 max-w-2xl mx-auto px-2 md:px-0">
           StatusMax dramatically reduces video file size without compromising quality, entirely within your browser. No server uploads, total privacy.
         </p>
-        <div className="flex justify-center gap-4">
-          <Link to="/app" className="bg-[#25D366] text-white rounded-xl px-8 py-4 font-semibold text-lg hover:bg-[#1a9e4f] transition-colors shadow-lg shadow-green-500/20">
+        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 w-full px-4 sm:px-0">
+          <Link to="/app" className="w-full sm:w-auto bg-[#25D366] text-white rounded-xl px-6 py-3.5 sm:px-8 sm:py-4 font-semibold text-base sm:text-lg hover:bg-[#1a9e4f] transition-colors shadow-lg shadow-green-500/20">
             Launch Video Tool
           </Link>
-          <Link to="/dashboard" className="bg-white text-gray-700 border border-gray-200 rounded-xl px-8 py-4 font-semibold text-lg hover:bg-gray-50 transition-colors">
+          <Link to="/dashboard" className="w-full sm:w-auto bg-white text-gray-700 border border-gray-200 rounded-xl px-6 py-3.5 sm:px-8 sm:py-4 font-semibold text-base sm:text-lg hover:bg-gray-50 transition-colors">
             View Dashboard
           </Link>
         </div>

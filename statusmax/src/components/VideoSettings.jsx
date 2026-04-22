@@ -20,7 +20,7 @@ export default function VideoSettings({ settings, setSettings, isProcessing }) {
     
       {open && (
         <div className="mt-5 space-y-5">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="text-gray-700 font-medium text-sm block mb-1.5">Target Resolution</label>
               <select 
