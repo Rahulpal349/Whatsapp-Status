@@ -1,14 +1,24 @@
 import { Link } from 'react-router-dom'
+import { useBrowserSupport } from '../hooks/useBrowserSupport'
 
 export default function Navbar() {
+  const support = useBrowserSupport()
+
   return (
     <nav className="bg-white border-b border-gray-100 shadow-sm px-4 sm:px-6 py-3 sm:py-4">
       <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-y-4">
         
         {/* Logo */}
-        <Link to="/" className="text-[#25D366] font-bold text-lg sm:text-xl font-display shrink-0">
-          StatusMax
-        </Link>
+        <div className="flex items-center gap-3 shrink-0">
+          <Link to="/" className="text-[#25D366] font-bold text-lg sm:text-xl font-display">
+            StatusMax
+          </Link>
+          {support?.hardwareAccelerated && (
+            <span className="hidden sm:inline-block bg-green-50 text-[#25D366] text-xs font-medium px-2.5 py-1 rounded-full border border-green-100">
+              ⚡ GPU Mode Active
+            </span>
+          )}
+        </div>
     
         {/* Center Links */}
         <div className="flex items-center justify-center gap-4 sm:gap-6 w-full order-3 md:w-auto md:order-2">
